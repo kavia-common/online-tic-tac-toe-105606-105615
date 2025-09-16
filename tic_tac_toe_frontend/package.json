@@ -1,0 +1,31 @@
+{
+  "name": "tic_tac_toe_frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modern minimalistic Tic Tac Toe web UI in Ocean Professional theme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "clsx": "^2.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions",
+      "last 2 safari versions"
+    ]
+  }
+}
