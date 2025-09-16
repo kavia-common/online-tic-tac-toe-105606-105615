@@ -1,13 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * PUBLIC_INTERFACE
  * PlayerInfo
  * Shows X and O player info and whose turn, with the selected mode.
+ * Props:
+ *  - xIsNext: boolean
+ *  - started: boolean
+ *  - mode: "single" | "two"
  */
 export default function PlayerInfo({ xIsNext, started, mode }) {
   return (
-    <div className="panel">
+    <div className="panel" aria-label="Player information">
       <h2>Players</h2>
       <div className="player-row" style={{ marginBottom: 10 }}>
         <div className="player">
@@ -37,3 +42,9 @@ export default function PlayerInfo({ xIsNext, started, mode }) {
     </div>
   );
 }
+
+PlayerInfo.propTypes = {
+  xIsNext: PropTypes.bool.isRequired,
+  started: PropTypes.bool.isRequired,
+  mode: PropTypes.oneOf(["single", "two"]).isRequired,
+};

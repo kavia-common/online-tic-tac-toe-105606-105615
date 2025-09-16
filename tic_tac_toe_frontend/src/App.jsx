@@ -6,12 +6,10 @@ import ResultBanner from "./components/ResultBanner";
 import PlayerInfo from "./components/PlayerInfo";
 
 /**
- * App - Root component for Ocean Tic Tac Toe
- * Layout:
- *  - Header
- *  - Info row: player info + controls
- *  - Board area: game board + result panel
- *  - Footer
+ * PUBLIC_INTERFACE
+ * App - Root component for Ocean Tic Tac Toe.
+ * Provides overall layout and game state management for the board, controls, and status.
+ * No props are required; this component manages the complete game UI.
  */
 export default function App() {
   // Game state
